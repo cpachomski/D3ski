@@ -43,7 +43,7 @@ function renderGraph(city) {
     var yScale = d3.scaleLinear()
         								.domain(yExtent)
         								.range([height - margin.bottom, margin.top])
-    console.log(yExtent)
+
     var colorScale = d3.scaleLinear()
         									 .domain([10, 90])
         									 .range(['#2E4172', '#AA3939'])
