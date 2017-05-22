@@ -7,11 +7,15 @@ body {
 h1{
 	color: #333;
 	border-bottom: 1px solid #333;
-	padding-bottom: 25px;
+	padding: 25px;
 }
 
 svg {
 	margin: 100px auto;
 	position: relative;
 	display: block;
+}
+
+button {
+	margin: 0px 10px;
 }
