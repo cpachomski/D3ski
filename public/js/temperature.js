@@ -9,7 +9,18 @@ var height = 500
 
 var city = 'New York'
 
+var cityButtons = document.getElementsByClassName('cityButton');
+
+[].forEach.call(cityButtons, (cityButton) => {
+  cityButton.addEventListener('click', function() {
+    document.getElementById('graph').remove()
+    renderGraph(this.dataset.city)
+  })
+})
+
 function renderGraph(city) {
+
+  d3.select('body').append('svg').attr('id', 'graph')
 
   d3.tsv('public/data/data.tsv', (err, data) => {
     if (err) {

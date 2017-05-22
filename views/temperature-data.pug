@@ -7,7 +7,10 @@ html(lang="en")
 
 		body
 			h1 Temperature Data of NY, SF, and ATX from 2011-2012
-			svg
+			div(class="buttons")
+				button(class="cityButton" data-city="New York") New York
+				button(class="cityButton" data-city="San Francisco") San Francisco
+				button(class="cityButton" data-city="Austin") Austin
 
 
 			script(src="https://d3js.org/d3.v4.min.js")
