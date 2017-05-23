@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+  	"start:dev": "PORT=5000 nodemon server.js",
+  	"start": "PORT=3000 node server.js"
+  },
   "dependencies": {
     "express": "^4.15.3",
     "morgan": "^1.8.1",
