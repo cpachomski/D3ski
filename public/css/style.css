@@ -12,8 +12,9 @@ h1{
 
 svg {
 	margin: 100px auto;
-	position: relative;
-	display: block;
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
 }
 
 button {
