@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+		head
+			title="Temperature Line Data"
+			link(rel="stylesheet", href="/public/css/normalize.css")
+			link(rel="stylesheet", href="/public/css/skeleton.css")
+			link(rel="stylesheet", href="/public/css/style.css")
+
+
+		body
+			h1 Temperature Data of NY, SF, and ATX from 2011-2012
+			div(class="buttons")
+				button(class="cityButton" data-city="New York") New York
+				button(class="cityButton" data-city="San Francisco") San Francisco
+				button(class="cityButton" data-city="Austin") Austin
+
+
+			script(src="https://d3js.org/d3.v4.min.js")
+			script(src="/public/js/temperature-lines.js")
