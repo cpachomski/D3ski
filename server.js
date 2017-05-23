@@ -13,7 +13,23 @@ app.use('/public', express.static(path.join(__dirname, '/public')))
 
 // routes
 app.get('/temperature', (req, res) => {
-	res.render('temperature-data');
+	res.render('temperature-data')
+})
+
+app.get('/temperature-animated', (req, res) => {
+	res.render('temperature-animated')
+})
+
+app.get('/temperature-lines', (req, res) => {
+	res.render('temperature-line-data')
+})
+
+app.get('/test', (req, res) => {
+	res.render('test')
+})
+
+app.get('*', (req, res) => {
+	res.render('404')
 })
 
 // serve it up
